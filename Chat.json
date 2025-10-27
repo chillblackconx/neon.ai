@@ -1,1 +1,28 @@
-
+{
+  "name": "Chat",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Titre de la conversation"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "assistant",
+        "search",
+        "image",
+        "video"
+      ],
+      "description": "Type de chat"
+    },
+    "last_message": {
+      "type": "string",
+      "description": "Dernier message"
+    }
+  },
+  "required": [
+    "title",
+    "type"
+  ]
+}
