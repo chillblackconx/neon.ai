@@ -1,1 +1,35 @@
-
+{
+  "name": "Message",
+  "type": "object",
+  "properties": {
+    "chat_id": {
+      "type": "string",
+      "description": "ID du chat"
+    },
+    "role": {
+      "type": "string",
+      "enum": [
+        "user",
+        "assistant"
+      ],
+      "description": "R\u00f4le de l'\u00e9metteur"
+    },
+    "content": {
+      "type": "string",
+      "description": "Contenu du message"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "URL de l'image g\u00e9n\u00e9r\u00e9e"
+    },
+    "video_url": {
+      "type": "string",
+      "description": "URL de la vid\u00e9o g\u00e9n\u00e9r\u00e9e"
+    }
+  },
+  "required": [
+    "chat_id",
+    "role",
+    "content"
+  ]
+}
